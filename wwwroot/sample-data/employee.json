@@ -1,0 +1,42 @@
+﻿[
+  {
+    "firstName": "Willie",
+    "lastName": "Wonka",
+    "startDate": "9/29/2010",
+    "title": "SW Developer",
+    "salary": 100000,
+    "bonusPercentage": 7
+  },
+  {
+    "firstName": "Ian",
+    "lastName": "Fleming",
+    "startDate": "7/4/2015",
+    "title": "Producer",
+    "salary": 250000,
+    "bonusPercentage": 10
+  },
+  {
+    "firstName": "Ian",
+    "lastName": "Anderson",
+    "startDate": "1/1/2000",
+    "title": "Flautist Dancer",
+    "salary": 1250000,
+    "bonusPercentage": 2
+  },
+  {
+    "firstName": "Jethro",
+    "lastName": "Tull",
+    "startDate": "12/25/2020",
+    "title": "House Band",
+    "salary": 2500000,
+    "bonusPercentage": 1
+  },
+  {
+    "firstName": "Peggy",
+    "lastName": "Fleming",
+    "startDate": "5/8/2005",
+    "title": "Skater",
+    "salary": 124000,
+    "bonusPercentage": 5
+  }
+]

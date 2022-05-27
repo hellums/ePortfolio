@@ -1,0 +1,83 @@
+﻿@page "/employees"
+@inject HttpClient Http
+
+<h1>Employees</h1>
+
+@if (peeps == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Status</th>
+                <th>Project</th>
+                <th>Title</th>
+                <th>StartDate</th>
+                <th>Salary</th>
+                <th>Raise</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var peep in peeps)
+            {
+                <tr>
+                    <td>@peep.Name()</td>
+                    <td>@peep.Working()</td>
+                    <td>@peep.Working("Project X")</td>
+                    <td>@peep.ShowTitle()</td>
+                    <td>@peep.ShowStartDate()</td>
+					<td>$@peep.ShowSalary()</td>
+					<td>$@peep.CalculateRaise()</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private Worker[]? peeps;
+
+    protected override async Task OnInitializedAsync()
+    {
+        peeps = await Http.GetFromJsonAsync<Worker[]>("sample-data/employee.json");
+    }
+
+    public class Worker
+    {
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string StartDate { get; set; }
+        public string Title { get; set; }
+		public int Salary { get; set; }
+		public int BonusPercentage { get; set; }
+		public string FullName { get { return string.Format("{0} {1}", FirstName, LastName); } }
+
+        public string Name()
+		{ return (FullName); }
+
+		public string Working()
+		{ return ("Working"); }
+
+		public string Working(string tasking)
+		{ return (tasking); }
+
+		public string ShowTitle()
+		{ return (Title); }
+
+		public string ShowStartDate()
+		{ return (StartDate); }
+
+		public string ShowSalary()
+		{ return (Salary.ToString()); }
+		
+        public string CalculateRaise()
+		{
+			if (BonusPercentage == 0) { return("Error: no bonus percentage entered for this employee."); }
+			else { return (Salary * BonusPercentage / 100).ToString(); }
+		}
+    }
+}
