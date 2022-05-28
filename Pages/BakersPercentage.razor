@@ -2,10 +2,39 @@
 
 <h1>Baker's Percentage</h1>
 
-<p>In progress... This program takes desired weight of dough in as a parameter, and calculates the amount of each ingredient needed, based on the type of bread the user wants to bake, and how much.</p>
-
+<p role="status">Target weight: @currentWeight</p>
+<button class="btn btn-primary" @onclick="DecrementCount">Less</button>
+<button class="btn btn-primary" @onclick="ResetWeight">Reset</button>
+<button class="btn btn-primary" @onclick="IncrementCount">More</button>
 <p></p>
+<p>Flour total: @totalFlour</p>
+
+<br /><br />
 
 @code {
+    public int currentWeight = 900;
+    public float totalFlour = 585;
+    
+    public void IncrementCount()
+    {    
+        currentWeight += 10;
+        totalFlour = (currentWeight * .65F);
+    }
+    public void DecrementCount()
+    {
+        currentWeight -= 10;
+        totalFlour = (currentWeight * .65F);
+    }
+
+    public void ResetWeight()
+    {    
+        currentWeight = 900;
+        totalFlour = (currentWeight * .65F);
+        //uriHelper.NavigateTo(uriHelper.Uri, forceLoad: true);
+    }
+    
+    // Demonstrates how a parent component can supply parameters
+    [Parameter]
+    public string? title { get; set; }
 
 }
