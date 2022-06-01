@@ -12,7 +12,7 @@
   {
     "Customer": "Air Force Software Factory",
     "System": "Network Circuit Tracking",
-    "Language": "Access"
+    "Language": "MS Access"
   },
   {
     "Customer": "US Navy Pensacola",
@@ -22,17 +22,17 @@
   {
     "Customer": "Ceridian Hawaii",
     "System": "ITSM, Helpdesk",
-    "Language": "Access"
+    "Language": "MS Access"
   },
   {
     "Customer": "US Air Force KRSOC",
     "System": "Linguist Utilities",
-    "Language": "C, shell"
+    "Language": "C/C++, shell"
   },
   {
     "Customer": "US Air Force KRSOC",
     "System": "Production Analytics, DCS",
-    "Language": "C, shell"
+    "Language": "C/C++, shell"
   },
   {
     "Customer": "UK Air Force Italy",
@@ -42,12 +42,12 @@
   {
     "Customer": "US Air Force Italy",
     "System": "Cyrillic-Translit converter",
-    "Language": "ANSI C"
+    "Language": "C/C++"
   },
   {
     "Customer": "US Air Force Italy",
     "System": "Morse Code Ops Testing",
-    "Language": "ANSI C"
+    "Language": "C, Turbo Pascal"
   },
   {
     "Customer": "Personal",
