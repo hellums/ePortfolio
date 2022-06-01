@@ -1,6 +1,17 @@
 ﻿@page "/bakerspercentage"
 
 <center><h1>Baker's Percentage</h1></center>
+<label for="breadType">Bread Type</label>
+<select class="form-control" @bind=breadType>
+    <option selected disabled value="None" id="breadType">Choose Bread Type</option>
+    <option value="Ciabatta">Ciabatta</option>
+    <option value="Focaccia">Focaccia</option>
+    <option value="Sandwich">Sandwich</option>
+    <option value="Buns">Buns</option>
+    <option value="Pizza">Pizza</option>
+    <option value="Country">Country</option>
+</select>
+<p></p>
 
 <p role="status">Target weight: @currentWeight</p>
 <button class="btn btn-primary" @onclick="DecrementCount">Less</button>
@@ -8,11 +19,13 @@
 <button class="btn btn-primary" @onclick="IncrementCount">More</button>
 <p></p>
 <p>Flour total: @totalFlour</p>
+<p>Bread type: @breadType</p>
 
 @code {
     public int currentWeight = 900;
     public float totalFlour = 585;
-    
+    public string breadType = "";
+
     public void IncrementCount()
     {    
         currentWeight += 10;
