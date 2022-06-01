@@ -1,0 +1,62 @@
+[
+  {
+    "Customer": "UK Air Force ROTC",
+    "System": "Personnel Management",
+    "Language": "Access"
+  },
+  {
+    "Customer": "Air Force Software Factory",
+    "System": "IEMATS Nuclear C2 Comms",
+    "Language": "C, 3rd party DLLs, shell"
+  },
+  {
+    "Customer": "Air Force Software Factory",
+    "System": "Network Circuit Tracking",
+    "Language": "Access"
+  },
+  {
+    "Customer": "US Navy Pensacola",
+    "System": "ITSM, Helpdesk",
+    "Language": "Access"
+  },
+  {
+    "Customer": "Ceridian Hawaii",
+    "System": "ITSM, Helpdesk",
+    "Language": "Access"
+  },
+  {
+    "Customer": "US Air Force KRSOC",
+    "System": "Linguist Utilities",
+    "Language": "C, shell"
+  },
+  {
+    "Customer": "US Air Force KRSOC",
+    "System": "Production Analytics, DCS",
+    "Language": "C, shell"
+  },
+  {
+    "Customer": "UK Air Force Italy",
+    "System": "Personnel Management",
+    "Language": "DBIII"
+  },
+  {
+    "Customer": "US Air Force Italy",
+    "System": "Cyrillic-Translit converter",
+    "Language": "ANSI C"
+  },
+  {
+    "Customer": "US Air Force Italy",
+    "System": "Morse Code Ops Testing",
+    "Language": "ANSI C"
+  },
+  {
+    "Customer": "Personal",
+    "System": "Cyrillic Word Processor",
+    "Language": "TI BASIC"
+  },
+  {
+    "Customer": "Personal",
+    "System": "School Library DBMS",
+    "Language": "Apple BASIC"
+  }
+  ]

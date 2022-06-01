@@ -1,9 +1,16 @@
 ﻿@page "/miscellaneous"
+@inject HttpClient Http
 
-<h3>Miscellaneous Projects</h3>
+<center><h1>Miscellaneous Projects</h1></center>
 
 The following are software projects I worked on over the years, professionally or as part of an academic or personal project.
 
+@if (projects == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
     <table class="table">
         <thead>
             <tr>
@@ -13,70 +20,37 @@ The following are software projects I worked on over the years, professionally o
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>UK Air Force ROTC</td>
-                <td>Personnel Management</td>
-                <td>Access</td>
-            </tr>
-            <tr>
-                <td>Air Force Software Factory</td>
-                <td>IEMATS Nuclear C2 Comms</td>
-                <td>C, 3rd party DLLs, shell</td>
-            </tr>
-            <tr>
-                <td>Air Force Software Factory</td>
-                <td>Network Circuit Tracking</td>
-                <td>Access</td>
-            </tr>
-            <tr>
-                <td>US Navy Pensacola</td>
-                <td>ITSM, Helpdesk</td>
-                <td>Access</td>
-            </tr>
-            <tr>
-                <td>Ceridian Hawaii</td>
-                <td>ITSM, Helpdesk</td>
-                <td>Access</td>
-            </tr>
-            <tr>
-                <td>US Air Force KRSOC</td>
-                <td>Linguist Utilities</td>
-                <td>C, shell</td>
-            </tr>
-            <tr>
-                <td>US Air Force KRSOC</td>
-                <td>Production Analytics, DCS</td>
-                <td>C, shell</td>
-            </tr>
-            <tr>
-                <td>UK Air Force Italy</td>
-                <td>Personnel Management</td>
-                <td>DBIII</td>
-            </tr>
-            <tr>
-                <td>US Air Force Italy</td>
-                <td>Cyrillic-Translit converter</td>
-                <td>ANSI C</td>
-            </tr>
-            <tr>
-                <td>US Air Force Italy</td>
-                <td>Morse Code Ops Testing</td>
-                <td>ANSI C</td>
-            </tr>
-            <tr>
-                <td>Personal</td>
-                <td>Cyrillic Word Processor</td>
-                <td>TI BASIC</td>
-            </tr>
-            <tr>
-                <td>Personal</td>
-                <td>School Library DBMS</td>
-                <td>Apple BASIC</td>
-            </tr>
+            @foreach (var Project in projects)
+            {
+                <tr>
+                    <td>@Project.GetCustomer()</td>
+                    <td>@Project.GetSystem()</td>
+                    <td>@Project.GetLanguage()</td>
+                </tr>
+            }
         </tbody>
     </table>
+}
 
 
 @code {
+    private Project[]? projects;
 
+    protected override async Task OnInitializedAsync() => projects = await Http.GetFromJsonAsync<Project[]>("sample-data/projects.json");
+
+    public class Project
+    {
+        public string Customer { get; set; }
+        public string System { get; set; }
+        public string Language { get; set; }
+
+        public string GetCustomer()
+        { return (Customer); }
+
+        public string GetSystem()
+        { return (System); }
+
+        public string GetLanguage()
+        { return (Language); }
+    }
 }

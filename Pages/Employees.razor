@@ -24,7 +24,7 @@ else
             </tr>
         </thead>
         <tbody>
-            @foreach (var peep in peeps)
+            @foreach (var peep in peeps) //had to go this route because filename interfered with class name
             {
                 <tr>
                     <td>@peep.Name()</td>
