@@ -7,7 +7,7 @@
   {
     "Customer": "Air Force Software Factory",
     "System": "IEMATS Nuclear C2 Comms",
-    "Language": "C, 3rd party DLLs, shell"
+    "Language": "C/C++, 3rd party DLLs, shell"
   },
   {
     "Customer": "Air Force Software Factory",
@@ -17,7 +17,7 @@
   {
     "Customer": "US Navy Pensacola",
     "System": "ITSM, Helpdesk",
-    "Language": "Access"
+    "Language": "MS Access"
   },
   {
     "Customer": "Ceridian Hawaii",
@@ -31,11 +31,11 @@
   },
   {
     "Customer": "US Air Force KRSOC",
-    "System": "Production Analytics, DCS",
+    "System": "Production Analytics, DSS",
     "Language": "C/C++, shell"
   },
   {
-    "Customer": "UK Air Force Italy",
+    "Customer": "US Air Force Italy",
     "System": "Personnel Management",
     "Language": "dBase III"
   },
