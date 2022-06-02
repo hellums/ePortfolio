@@ -1,0 +1,56 @@
+﻿@page "/miscellaneous"
+@inject HttpClient Http
+
+<center><h1>Miscellaneous Projects</h1></center>
+
+The following are software projects I worked on over the years, professionally or as part of an academic or personal project.
+
+@if (projects == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Customer</th>
+                <th>App/System</th>
+                <th>Language</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var Project in projects)
+            {
+                <tr>
+                    <td>@Project.GetCustomer()</td>
+                    <td>@Project.GetSystem()</td>
+                    <td>@Project.GetLanguage()</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+
+@code {
+    private Project[]? projects;
+
+    protected override async Task OnInitializedAsync() => projects = await Http.GetFromJsonAsync<Project[]>("sample-data/projects.json");
+
+    public class Project
+    {
+        public string Customer { get; set; }
+        public string System { get; set; }
+        public string Language { get; set; }
+
+        public string GetCustomer()
+        { return (Customer); }
+
+        public string GetSystem()
+        { return (System); }
+
+        public string GetLanguage()
+        { return (Language); }
+    }
+}

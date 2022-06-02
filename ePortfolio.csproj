@@ -14,7 +14,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Remove="Pages\Component.razor" />
     <Content Remove="Shared\SurveyPrompt.razor" />
+    <Content Remove="wwwroot\sample-data\json.json" />
   </ItemGroup>
 
   <ItemGroup>

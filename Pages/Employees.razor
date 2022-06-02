@@ -1,7 +1,7 @@
 ﻿@page "/employees"
 @inject HttpClient Http
 
-<h1>Employees</h1>
+<center><strong><h1>Employees</h1></strong></center>
 
 <p>This is a simple program assignment that reads values in from a JSON. It loads the records into an array of Employee class objects and prints out some static and dynamic values in a table..</p>
 
@@ -24,7 +24,7 @@ else
             </tr>
         </thead>
         <tbody>
-            @foreach (var peep in peeps)
+            @foreach (var peep in peeps) //had to go this route because filename interfered with class name
             {
                 <tr>
                     <td>@peep.Name()</td>
@@ -78,7 +78,7 @@ else
 		
         public string CalculateRaise()
 		{
-			if (BonusPercentage == 0) { return("Error: no bonus percentage entered for this employee."); }
+			if (BonusPercentage == 0) { return(" None"); }
 			else { return (Salary * BonusPercentage / 100).ToString(); }
 		}
     }
