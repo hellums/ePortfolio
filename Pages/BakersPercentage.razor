@@ -10,7 +10,7 @@
 
 <p>Flour total: @totalFlour</p>
 <label for="breadType">Bread Type</label>
-<select class="form-select-sm" @bind=breadType>
+<select class="form-select-sm" @onchange="ChangeFlour">
     <option selected disabled value="" id="breadType">Choose Bread Type </option>
     <option value="Ciabatta">Ciabatta</option>
     <option value="Focaccia">Focaccia</option>
@@ -42,6 +42,25 @@
     {
         currentWeight = 900;
         totalFlour = (currentWeight * .65F);
+        //uriHelper.NavigateTo(uriHelper.Uri, forceLoad: true);
+    }
+
+    public void ChangeFlour(ChangeEventArgs e)
+    {
+        string SelectedBread = e.Value.ToString();
+        switch (SelectedBread)
+        {
+            case "Focaccia":
+                // Use the text block below to separate html elements from code
+                totalFlour = (totalFlour * .5F);
+                break;  // Always break each case
+            case "Ciabatta":
+                totalFlour = (totalFlour * .1F);
+                break;
+            default:
+                break;
+        }
+
         //uriHelper.NavigateTo(uriHelper.Uri, forceLoad: true);
     }
 
