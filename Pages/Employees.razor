@@ -32,8 +32,8 @@ else
                     <td>@peep.Working("Project X")</td>
                     <td>@peep.ShowTitle()</td>
                     <td>@peep.ShowStartDate()</td>
-					<td>$@peep.ShowSalary()</td>
-					<td>$@peep.CalculateRaise()</td>
+                    <td>$@peep.ShowSalary()</td>
+                    <td>$@peep.CalculateRaise()</td>
                 </tr>
             }
         </tbody>
@@ -54,32 +54,32 @@ else
         public string LastName { get; set; }
         public string StartDate { get; set; }
         public string Title { get; set; }
-		public int Salary { get; set; }
-		public int BonusPercentage { get; set; }
-		public string FullName { get { return string.Format("{0} {1}", FirstName, LastName); } }
+        public int Salary { get; set; }
+        public int BonusPercentage { get; set; }
+        public string FullName { get { return string.Format("{0} {1}", FirstName, LastName); } }
 
         public string Name()
-		{ return (FullName); }
+        { return (FullName); }
 
-		public string Working()
-		{ return ("Working"); }
+        public string Working()
+        { return ("Working"); }
 
-		public string Working(string tasking)
-		{ return (tasking); }
+        public string Working(string tasking)
+        { return (tasking); }
 
-		public string ShowTitle()
-		{ return (Title); }
+        public string ShowTitle()
+        { return (Title); }
 
-		public string ShowStartDate()
-		{ return (StartDate); }
+        public string ShowStartDate()
+        { return (StartDate); }
 
-		public string ShowSalary()
-		{ return (Salary.ToString()); }
-		
+        public string ShowSalary()
+        { return (Salary.ToString()); }
+
         public string CalculateRaise()
-		{
-			if (BonusPercentage == 0) { return(" None"); }
-			else { return (Salary * BonusPercentage / 100).ToString(); }
-		}
+        {
+            if (BonusPercentage == 0) { return (" None"); }
+            else { return (Salary * BonusPercentage / 100).ToString(); }
+        }
     }
 }

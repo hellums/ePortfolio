@@ -1,6 +1,14 @@
 ﻿@page "/bakerspercentage"
 
 <center><h1>Baker's Percentage</h1></center>
+
+<p role="status">Target weight: @currentWeight</p>
+<button class="btn btn-primary" @onclick="DecrementCount">Less</button>
+<button class="btn btn-primary" @onclick="ResetWeight">Reset</button>
+<button class="btn btn-primary" @onclick="IncrementCount">More</button>
+<p></p>
+
+<p>Flour total: @totalFlour</p>
 <label for="breadType">Bread Type</label>
 <select class="form-select-sm" @bind=breadType>
     <option selected disabled value="" id="breadType">Choose Bread Type</option>
@@ -12,13 +20,6 @@
     <option value="Country">Country</option>
 </select>
 <p></p>
-
-<p role="status">Target weight: @currentWeight</p>
-<button class="btn btn-primary" @onclick="DecrementCount">Less</button>
-<button class="btn btn-primary" @onclick="ResetWeight">Reset</button>
-<button class="btn btn-primary" @onclick="IncrementCount">More</button>
-<p></p>
-<p>Flour total: @totalFlour</p>
 <p>Bread type: @breadType</p>
 
 @code {
@@ -27,7 +28,7 @@
     public string breadType = "";
 
     public void IncrementCount()
-    {    
+    {
         currentWeight += 10;
         totalFlour = (currentWeight * .65F);
     }
@@ -38,12 +39,12 @@
     }
 
     public void ResetWeight()
-    {    
+    {
         currentWeight = 900;
         totalFlour = (currentWeight * .65F);
         //uriHelper.NavigateTo(uriHelper.Uri, forceLoad: true);
     }
-    
+
     // Demonstrates how a parent component can supply parameters
     [Parameter]
     public string? title { get; set; }
