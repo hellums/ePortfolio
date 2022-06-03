@@ -20,13 +20,6 @@
     <option value="Pizza">Pizza</option>
 </select>
 <p></p>
-@*<p><strong>Total Ingredients (in grams)</strong></p>
-<p>Flour: @flourAmount.ToString("#.#")</p>
-<p>Water: @waterAmount.ToString("#.#")</p>
-<p>Yeast: @yeastAmount.ToString("#.#")</p>
-<p>Salt: @saltAmount.ToString("#.#")</p>
-<p>Sugar: @sugarAmount.ToString("#.#")</p>
-<p>Oil/Butter: @fatAmount.ToString("#.#")</p>*@
 
 <p><strong>Total Ingredients Required</strong></p>
 <table class="table">
@@ -68,11 +61,11 @@
 @code {
     public int mass = 900;
     public string breadType = "";
-    public float waterPercent = 65.0F;
+    public float waterPercent = 63.0F;
     public float yeastPercent = 1.2F;
-    public float saltPercent = 2.0F;
-    public float sugarPercent = 2.0F;
-    public float fatPercent = 2.0F;
+    public float saltPercent = 1.0F;
+    public float sugarPercent = 3.5F;
+    public float fatPercent = 8.0F;
     public float flourAmount = 0.0F;
     public float waterAmount = 0.0F;
     public float yeastAmount = 0.0F;
@@ -108,11 +101,11 @@
         switch (selectedBread)
         {
             case "Sandwich":
-                waterPercent = 65.0F;
+                waterPercent = 63.0F;
                 yeastPercent = 1.2F;
-                saltPercent = 2.0F;
-                sugarPercent = 2.0F;
-                fatPercent = 2.0F;
+                saltPercent = 1.0F;
+                sugarPercent = 3.5F;
+                fatPercent = 8.0F;
                 break;
             case "Focaccia":
                 waterPercent = 87.5F;
