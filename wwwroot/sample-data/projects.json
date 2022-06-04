@@ -1,16 +1,21 @@
 [
   {
-    "Customer": "UK Air Force ROTC",
+    "Customer": "UK ROTC (USAF)",
     "System": "Personnel Management",
-    "Language": "Access"
+    "Language": "MS Access"
   },
   {
-    "Customer": "Air Force Software Factory",
+    "Customer": "USAF Distance Learning",
+    "System": "AF-ILC (later ADLS)",
+    "Language": "HTML, VB.NET, Authentication API, Oracle"
+  },
+  {
+    "Customer": "USAF Software Factory",
     "System": "IEMATS Nuclear C2 Comms",
     "Language": "C/C++, 3rd party DLLs, shell"
   },
   {
-    "Customer": "Air Force Software Factory",
+    "Customer": "USAF Software Factory",
     "System": "Network Circuit Tracking",
     "Language": "MS Access"
   },
@@ -59,4 +64,4 @@
     "System": "School Library DBMS",
     "Language": "Apple BASIC"
   }
-  ]
+]
