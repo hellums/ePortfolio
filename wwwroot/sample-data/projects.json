@@ -6,12 +6,12 @@
   },
   {
     "Customer": "USAF Distance Learning",
-    "System": "AF-ILC (later ADLS)",
+    "System": "ADLS (now MyLearning LMS)",
     "Language": "HTML, VB.NET, Authentication API, Oracle"
   },
   {
     "Customer": "USAF Software Factory",
-    "System": "IEMATS Nuclear C2 Comms",
+    "System": "IEMATS Nuclear Comms",
     "Language": "C/C++, 3rd party DLLs, shell"
   },
   {
