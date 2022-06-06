@@ -4,58 +4,63 @@
 <p></p>
 <strong>By selecting the total amount of dough needed (in grams) and the bread type, this program will calculate the amount of ingredients (by weight) needed for a successful and tasty baking experience.</strong>
 <p></p>
-<p role="status">Target weight (grams): @mass</p>
-<button class="btn btn-primary" @onclick="DecrementCount">Less</button>
-<button class="btn btn-primary" @onclick="ResetWeight">Reset</button>
-<button class="btn btn-primary" @onclick="IncrementCount">More</button>
-<p></p>
+<div class="row">
+    <div class="col-md-4">
+        <p role="status">Target weight (grams): @mass</p>
+        <button class="btn btn-primary" @onclick="DecrementCount">Less</button>
+        <button class="btn btn-primary" @onclick="ResetWeight">Reset</button>
+        <button class="btn btn-primary" @onclick="IncrementCount">More</button>
+        <p></p>
 
-<select class="form-select-sm" @onchange="CalculateDough">
-    <option selected disabled value="" id="breadType">Change Bread Type </option>
-    <option value="Sandwich">Sandwich (default)</option>
-    <option value="Ciabatta">Ciabatta</option>
-    <option value="Focaccia">Focaccia</option>
-    <option value="Sandwich">French</option>
-    <option value="Buns">Buns</option>
-    <option value="Pizza">Pizza</option>
-</select>
-<p></p>
+        <select class="form-select-sm" @onchange="CalculateDough">
+            <option selected disabled value="" id="breadType">Change Bread Type </option>
+            <option value="Sandwich">Sandwich (default)</option>
+            <option value="Ciabatta">Ciabatta</option>
+            <option value="Focaccia">Focaccia</option>
+            <option value="Sandwich">French</option>
+            <option value="Buns">Buns</option>
+            <option value="Pizza">Pizza</option>
+        </select>
+    </div>
 
-<p><strong>Total Ingredients Required</strong></p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>Ingredient</th>
-            <th>Amount (grams)</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Flour</td>
-            <td>@flourAmount.ToString("#")</td>
-        </tr>
-        <tr>
-            <td>Water</td>
-            <td>@waterAmount.ToString("#")</td>
-        </tr>
-        <tr>
-            <td>Yeast</td>
-            <td>@yeastAmount.ToString("#")</td>
-        </tr>
-        <tr>
-            <td>Salt</td>
-            <td>@saltAmount.ToString("#")</td>
-        </tr>
-        <tr>
-            <td>Sugar</td>
-            <td>@sugarAmount.ToString("#")</td>
-        </tr>
-        <tr>
-            <td>Oil/Butter</td>
-            <td>@fatAmount.ToString("#")</td>
-        </tr>
-    </tbody>
-</table>
+    <div class="col-md-8">
+        <p><strong>Total Ingredients Required</strong></p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Ingredient</th>
+                    <th>Amount (grams)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Flour</td>
+                    <td>@flourAmount.ToString("#")</td>
+                </tr>
+                <tr>
+                    <td>Water</td>
+                    <td>@waterAmount.ToString("#")</td>
+                </tr>
+                <tr>
+                    <td>Yeast</td>
+                    <td>@yeastAmount.ToString("#")</td>
+                </tr>
+                <tr>
+                    <td>Salt</td>
+                    <td>@saltAmount.ToString("#")</td>
+                </tr>
+                <tr>
+                    <td>Sugar</td>
+                    <td>@sugarAmount.ToString("#")</td>
+                </tr>
+                <tr>
+                    <td>Oil/Butter</td>
+                    <td>@fatAmount.ToString("#")</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
 
 
 @code {
