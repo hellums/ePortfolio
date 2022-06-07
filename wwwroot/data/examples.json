@@ -1,0 +1,44 @@
+[
+  {
+    "Subject": "ePortfolio",
+    "Language": "C# Blazor Wasm",
+    "Model": "Web SPA",
+    "Scope": "Front/Back",
+    "Database": "JSON"
+  },
+  {
+    "Subject": "PrintWorthy",
+    "Language": "C# Blazor Server",
+    "Model": "Web CRUD",
+    "Scope": "Front/Back",
+    "Database": "MongoDB Atlas"
+  },
+  {
+    "Subject": "Baker's Percentage",
+    "Language": "C# Blazor Wasm",
+    "Model": "Web SPA",
+    "Scope": "Front/Back",
+    "Database": ""
+  },
+  {
+    "Subject": "RomCom",
+    "Language": "Flask/Python",
+    "Model": "Web",
+    "Scope": "Front/Back",
+    "Database": ""
+  },
+  {
+    "Subject": "RomCom",
+    "Language": "Jupyter/iPy",
+    "Model": "Data Analysis",
+    "Scope": "Web/Desktop",
+    "Database": ""
+  },
+  {
+    "Subject": "RomCom",
+    "Language": "Python",
+    "Model": "CLI",
+    "Scope": "Desktop",
+    "Database": "SQLite"
+  }
+]
