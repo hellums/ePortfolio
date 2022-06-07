@@ -9,21 +9,18 @@ namespace ePortfolio.Pages
         {
             projects = await Http.GetFromJsonAsync<Project[]>("data/projects.json");
         }
-
         public class Project
         {
-            public string Customer { get; set; }
-            public string System { get; set; }
-            public string Language { get; set; }
-
+            public string? Customer { get; set; }
+            public string? System { get; set; }
+            public string? Language { get; set; }
             public string GetCustomer()
             { return (Customer); }
-
             public string GetSystem()
             { return (System); }
-
             public string GetLanguage()
             { return (Language); }
+
         }
     }
 }
