@@ -37,7 +37,7 @@ else
 @code {
     private Project[]? projects;
 
-    protected override async Task OnInitializedAsync() => projects = await Http.GetFromJsonAsync<Project[]>("sample-data/projects.json");
+    protected override async Task OnInitializedAsync() => projects = await Http.GetFromJsonAsync<Project[]>("data/projects.json");
 
     public class Project
     {
