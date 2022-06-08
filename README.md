@@ -1,6 +1,6 @@
 # ePortfolio
 
-This program uses Blazor WebAssembly to create a personal ePortfolio of Razor pages and components representing my body of software development work (professional, academic, and personal). The Single Page App is posted to Azure Websites, and includes a link to a simple Blazor Serrver CRUD app with user authentication and a MongoDB on Atlas. This ePortfolio constitutes a wrapper for at least one deliverable project (a Baker's Percentage Engine) that is part of a Code Louisville bootcamp on C#, .NET, and object-oriented programming. It includes work from additional bootcamps on Python and Data Analysis, and the hosted app will remain as a living document, app, and repository with its own SDLC.
+This program uses Blazor WebAssembly to create a personal ePortfolio of Razor pages and components representing my body of software development work (professional, academic, and personal). The Single Page App is posted to Azure Websites, and includes a link to a simple Blazor Server CRUD app with basic AD user authentication and a MongoDB on Atlas. This ePortfolio constitutes a wrapper for at least one deliverable project (a Baker's Percentage Engine) that is part of a Code Louisville bootcamp on C#, .NET, and object-oriented programming. It includes work from additional bootcamps on Python and Data Analysis, and the hosted app will remain as a living document, app, and repository with its own SDLC.
 
 ## Why Blazor?
 
