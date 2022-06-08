@@ -13,31 +13,19 @@ namespace ePortfolio.Pages
 
         public class Worker
         {
-            public string FirstName { get; set; }
-            public string LastName { get; set; }
-            public string StartDate { get; set; }
-            public string Title { get; set; }
+            public string? FirstName { get; set; }
+            public string? LastName { get; set; }
+            public string? StartDate { get; set; }
+            public string? Title { get; set; }
             public int Salary { get; set; }
             public int BonusPercentage { get; set; }
             public string FullName { get { return string.Format("{0} {1}", FirstName, LastName); } }
 
-            public string Name()
-            { return (FullName); }
-
             public string Working()
             { return ("Working"); }
 
-            public string Working(string tasking)
+            public string Working(string tasking) //overloading example
             { return (tasking); }
-
-            public string ShowTitle()
-            { return (Title); }
-
-            public string ShowStartDate()
-            { return (StartDate); }
-
-            public string ShowSalary()
-            { return (Salary.ToString()); }
 
             public string CalculateRaise()
             {

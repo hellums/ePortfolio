@@ -27,12 +27,12 @@ else
             @foreach (var peep in peeps) //had to go this route because filename interfered with class name
             {
                 <tr>
-                    <td>@peep.Name()</td>
+                    <td>@peep.FullName</td>
                     @*<td>@peep.Working()</td>*@
                     <td>@peep.Working("Project X")</td>
-                    <td>@peep.ShowTitle()</td>
-                    <td>@peep.ShowStartDate()</td>
-                    <td>$@peep.ShowSalary()</td>
+                    <td>@peep.Title</td>
+                    <td>@peep.StartDate</td>
+                    <td>$@peep.Salary</td>
                     <td>$@peep.CalculateRaise()</td>
                 </tr>
             }

@@ -14,13 +14,6 @@ namespace ePortfolio.Pages
             public string? Customer { get; set; }
             public string? System { get; set; }
             public string? Language { get; set; }
-            public string GetCustomer()
-            { return (Customer); }
-            public string GetSystem()
-            { return (System); }
-            public string GetLanguage()
-            { return (Language); }
-
         }
     }
 }
