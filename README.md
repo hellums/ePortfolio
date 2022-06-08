@@ -17,6 +17,8 @@ I chose Blazor because it has several purported advantages for a project like th
 - A Blazor ePortfolio is a more user-friendly interface, as an SPA, (with less "noise") than Github (especially for an ePortfolio)
 
 ## Instructions
+To see the program running live, got to my [ePortfolio site on Azure](https://hellums-eportfolio.azurewebsites.net)
+
 To clone and run the program on your local system, do the following:
 
 - create a new folder, such as "test", then run these commands
@@ -27,8 +29,8 @@ To clone and run the program on your local system, do the following:
 
 - In a browser or tab, go the the link listed in the dotnet output (http://localhost:7257 for example) 
 
-To see the program running live, got to my [ePortfolio site on Azure](https://hellums-eportfolio.azurewebsites.net)
-
+You can also use Visual Studio to run from the IDE and automate the browser launch, by loading the ePortfolio.sln file in that folder (after cloning)
+ 
 ## Code Louisville Requirements List
 - [X] Project includes a README file that explains the following:
 - [X] A one paragraph or longer description of what your project is about
