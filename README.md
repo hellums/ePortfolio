@@ -19,11 +19,11 @@ I chose Blazor because it has several purported advantages for a project like th
 ## Code Louisville Requirements List
 - [X] Project includes a README file that explains the following:
 - [X] A one paragraph or longer description of what your project is about
-- [ ] Any special instructions required for the reviewer to run your project.
-- [X] Create at least one class and object instance with populated data used in the application
-- [X] Create and call at least 3 functions or methods, at least one of which returns a value used in the application.
-- [X] Create a dictionary or list, populate it with several values, retrieve at least one value, and use it in your program
-- [X] Read data from an external file, such as text, JSON, CSV, etc and use that data in your application
-- [X] Connect to an external/3rd party API and read data into your app
-- [X] Build a conversion tool that converts user input to another type and displays it (ex: converts cups to grams)
+- [ ] Any special instructions required for the reviewer to run your project
+- [X] Create at least [one class](https://github.com/hellums/ePortfolio/blob/c650eafc47f49c14031c88f6fb5f7ee919c1da99/Pages/Projects.razor.cs#L12) and [object instance](https://github.com/hellums/ePortfolio/blob/c650eafc47f49c14031c88f6fb5f7ee919c1da99/Pages/Projects.razor.cs#L5) with [populated data used in the application](https://github.com/hellums/ePortfolio/blob/c650eafc47f49c14031c88f6fb5f7ee919c1da99/Pages/Projects.razor#L24)
+- [X] Create and call at least [3 functions or methods]([https://github.com/hellums/ePortfolio/blob/c650eafc47f49c14031c88f6fb5f7ee919c1da99/Pages/Csharp.razor#L6](https://github.com/hellums/ePortfolio/blob/c650eafc47f49c14031c88f6fb5f7ee919c1da99/Pages/Csharp.razor#L1)), at least one of which [returns a value used in the application]((https://github.com/hellums/ePortfolio/blob/c650eafc47f49c14031c88f6fb5f7ee919c1da99/Pages/BakersPercentage.razor#L163))
+- [X] Create a dictionary or list, [populate it with several values] (https://github.com/hellums/ePortfolio/blob/c650eafc47f49c14031c88f6fb5f7ee919c1da99/wwwroot/data/examples.json#L1), retrieve at least one value, and [use it in your program](https://github.com/hellums/ePortfolio/blob/c650eafc47f49c14031c88f6fb5f7ee919c1da99/Pages/Projects.razor#L24)
+- [X] Read data from an [external file, such as text, JSON,](https://github.com/hellums/ePortfolio/blob/c650eafc47f49c14031c88f6fb5f7ee919c1da99/Pages/Projects.razor.cs#L10) CSV, etc and [use that data in your application](https://github.com/hellums/ePortfolio/blob/c650eafc47f49c14031c88f6fb5f7ee919c1da99/Pages/Projects.razor#L24)
+- [X] Connect to an external/3rd party API and [read data into your app](https://github.com/hellums/ePortfolio/blob/c650eafc47f49c14031c88f6fb5f7ee919c1da99/Pages/PrintWorthy.razor#L6)
+- [X] Build a [conversion tool that converts user input to another type and displays it](https://github.com/hellums/ePortfolio/blob/c650eafc47f49c14031c88f6fb5f7ee919c1da99/Pages/BakersPercentage.razor#L164) (ex: converts cups to grams)
 - [ ] Create 3 or more unit tests for your application
