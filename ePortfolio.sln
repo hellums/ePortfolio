@@ -5,10 +5,6 @@ VisualStudioVersion = 17.2.32414.248
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ePortfolio", "ePortfolio.csproj", "{6950F468-7D4F-44C7-8086-FF47EE497CA4}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{3490ABCA-6E16-49B6-A024-0D4E44D2FE26}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ePortfolio.PagesTEST", "..\ePortfolio.PagesTEST\ePortfolio.PagesTEST.csproj", "{EF0D0AED-D83F-4484-B139-40F685F928E1}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,16 +15,9 @@ Global
 		{6950F468-7D4F-44C7-8086-FF47EE497CA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6950F468-7D4F-44C7-8086-FF47EE497CA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6950F468-7D4F-44C7-8086-FF47EE497CA4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EF0D0AED-D83F-4484-B139-40F685F928E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EF0D0AED-D83F-4484-B139-40F685F928E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EF0D0AED-D83F-4484-B139-40F685F928E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EF0D0AED-D83F-4484-B139-40F685F928E1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{EF0D0AED-D83F-4484-B139-40F685F928E1} = {3490ABCA-6E16-49B6-A024-0D4E44D2FE26}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D69DD261-8BC4-4F83-9954-4C1EA33556D2}
