@@ -350,3 +350,4 @@ MigrationBackup/
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
 /Properties/ServiceDependencies/ePortfolio20220603094150 - Web Deploy
+/Properties/ServiceDependencies/hellums-eportfolio - Web Deploy/profile.arm.json
