@@ -41,4 +41,6 @@ You can also use Visual Studio to run from the IDE and automate the browser laun
 - [X] Read data from an [external file, such as text, JSON,](https://github.com/hellums/ePortfolio/blob/c650eafc47f49c14031c88f6fb5f7ee919c1da99/Pages/Projects.razor.cs#L10) CSV, etc and [use that data in your application](https://github.com/hellums/ePortfolio/blob/c650eafc47f49c14031c88f6fb5f7ee919c1da99/Pages/Projects.razor#L24)
 - [X] Connect to an external/3rd party API and [read data into your app](https://github.com/hellums/ePortfolio/blob/c650eafc47f49c14031c88f6fb5f7ee919c1da99/Pages/PrintWorthy.razor#L6)
 - [X] Build a [conversion tool that converts user input to another type and displays it](https://github.com/hellums/ePortfolio/blob/c650eafc47f49c14031c88f6fb5f7ee919c1da99/Pages/BakersPercentage.razor#L164) (ex: converts cups to grams)
+- [X] Connect to an [external/3rd party API and read data into your app](https://github.com/hellums/PrintWorthy/blob/ab6b3c120c107285b0d68c1e4cae707df751bbdc/PrintWorthy/Service/ReferenceService.cs#L15)
+- [X] Use a [LINQ query to retrieve information] (https://github.com/hellums/PrintWorthy/blob/ab6b3c120c107285b0d68c1e4cae707df751bbdc/PrintWorthy/Service/ReferenceService.cs#L26) from a data structure (such as a list or array) or file
 - [ ] Create 3 or more unit tests for your application
