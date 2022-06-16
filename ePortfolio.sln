@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ePortfolio", "ePortfolio.cs
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{19B40141-F8D7-449C-B502-FCAA3E9EDF1E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ePortfolioTest", "..\ePortfolioTests\ePortfolioTest.csproj", "{8CFC7879-31BD-415B-9BB7-2AF0CB474D9D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ePortfolioTest", "..\ePortfolioTests\ePortfolioTest.csproj", "{8CFC7879-31BD-415B-9BB7-2AF0CB474D9D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
