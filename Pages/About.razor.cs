@@ -15,21 +15,6 @@ namespace ePortfolio.Pages
             public string? Model { get; set; }
             public string? Scope { get; set; }
             public string? Database { get; set; }
-
-            public string? GetSubject()
-            { return (Subject); }
-
-            public string? GetLanguage()
-            { return (Language); }
-
-            public string? GetModel()
-            { return (Model); }
-
-            public string? GetScope()
-            { return (Scope); }
-
-            public string? GetDatabase()
-            { return (Database); }
         }
     }
 }
