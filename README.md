@@ -44,3 +44,8 @@ You can also use Visual Studio to run from the IDE and automate the browser laun
 - [X] Connect to an [external/3rd party API and read data into your app](https://github.com/hellums/PrintWorthy/blob/ab6b3c120c107285b0d68c1e4cae707df751bbdc/PrintWorthy/Service/ReferenceService.cs#L15)
 - [X] Use a [LINQ query to retrieve information](https://github.com/hellums/PrintWorthy/blob/ab6b3c120c107285b0d68c1e4cae707df751bbdc/PrintWorthy/Service/ReferenceService.cs#L26) from a data structure (such as a list or array) or file
 - [X] Create 3 or more unit tests for your application 
+  - Executing all tests in file: BakerPercentageTest.cs
+  - Building Test Projects
+  - Executing all tests in file: BakerPercentageTest.cs
+  - ========== Starting test run ==========
+  - ========== Test run finished: 6 Tests (6 Passed, 0 Failed, 0 Skipped) run in 2.9 sec ==========
