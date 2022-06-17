@@ -14,6 +14,7 @@ namespace ePortfolio.Pages
             public string? Customer { get; set; }
             public string? System { get; set; }
             public string? Language { get; set; }
+            public string? Detail { get; set; }
         }
     }
 }

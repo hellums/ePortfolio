@@ -2,66 +2,79 @@
   {
     "Customer": "UK ROTC (USAF)",
     "System": "Personnel Management",
-    "Language": "MS Access"
+    "Language": "MS Access",
+    "Detail": "Desktop client for forms/reports with linked tables on network share for 8 staff. Status and details on 120 cadets, including school, degree, GPA, year, Nav/Pilot, career field, physical, fitness scores"
   },
   {
     "Customer": "USAF Distance Learning",
     "System": "ADLS (now MyLearning LMS)",
-    "Language": "HTML, VB.NET, Authentication API, Oracle"
+    "Language": "HTML, VB.NET, Authentication API, Oracle",
+    "Detail": "Air Force's first LMS, Meridian KSI web client with IIS, Oracle on failover .mil hosts at DISA Montgomery. I engineered, with $100K grant funding."
   },
   {
     "Customer": "USAF Software Factory",
     "System": "IEMATS Nuclear Comms",
-    "Language": "C/C++, 3rd party DLLs, shell"
+    "Language": "C/C++, 3rd party DLLs, shell",
+    "Detail": "Injection system for EAMs from Pentagon/Joint Staff (as seen in movie Crimson Tide). Lead Programmer turned Configuration Manager and Project Manager. Lead consultant for replacement system (DIRECT)."
   },
   {
     "Customer": "USAF Software Factory",
     "System": "Network Circuit Tracking",
-    "Language": "MS Access"
+    "Language": "MS Access",
+    "Detail": "Tracked status of network circuits Air Force-wide. Developed forms and worked issue tickets during alpha testing."
   },
   {
     "Customer": "US Navy Pensacola",
     "System": "ITSM, Helpdesk",
-    "Language": "MS Access"
+    "Language": "MS Access",
+    "Detail": "Packaged, installable Access program. Developed as SWDEV class project in basic computer officer training school in Biloxi. Also wired building and deployed AD/file server."
   },
   {
     "Customer": "Ceridian Hawaii",
     "System": "ITSM, Helpdesk",
-    "Language": "MS Access"
+    "Language": "MS Access",
+    "Detail": "Access database, forms, and reports. Developed as SWDEV class project for student in class, interfacing with her team of employees. I developed, another tested, she documented."
   },
   {
     "Customer": "US Air Force KRSOC",
     "System": "Linguist Utilities",
-    "Language": "C/C++, shell"
+    "Language": "C/C++, shell",
+    "Detail": "Programmed tools part-time for team of round-the-clock shift workers, and eventually full-time supervising 6 on-shift admins."
   },
   {
     "Customer": "US Air Force KRSOC",
     "System": "Production Analytics, DSS",
-    "Language": "C/C++, shell"
+    "Language": "C/C++, shell",
+    "Detail": "UNIX shell and C programs consolidating raw data from mainframe, generating local production statistics and reports to support tasking changes."
   },
   {
     "Customer": "US Air Force Italy",
     "System": "Personnel Management",
-    "Language": "dBase III"
+    "Language": "dBase III",
+    "Detail": "Database system for senior staff managing team of 125 military intelligence operators, generated reports on personnel, classification, training, specialty team assignments, arrival/departure date."
   },
   {
     "Customer": "US Air Force Italy",
     "System": "Cyrillic-Translit converter",
-    "Language": "C/C++"
+    "Language": "C/C++",
+    "Detail": "Converted translit to cyrillic so plentiful DoD/DLI training documents could be read in native language format using KOI-8, CYR. and MS code pages. Challenging because 1 cyrillic can be 2-4 translit."
   },
   {
     "Customer": "US Air Force Italy",
     "System": "Morse Code Ops Testing",
-    "Language": "C, Turbo Pascal"
+    "Language": "C, Turbo Pascal",
+    "Detail": "Created program so trainers could generate varying difficulty of source material for trainees to use, at variable speeds to ease entry for newcomers and challenge those ready for certification exam."
   },
   {
     "Customer": "Personal",
     "System": "Cyrillic Word Processor",
-    "Language": "TI BASIC"
+    "Language": "TI BASIC",
+    "Detail": "Overwrote bitmapped UpperCase character codes in memory, reading designed cyrillic characters from tape storage. No word processors for Russian at the time. Could create, save, and recall Russian files."
   },
   {
     "Customer": "Personal",
     "System": "School Library DBMS",
-    "Language": "Apple BASIC"
+    "Language": "Apple BASIC",
+    "Detail": ""
   }
 ]

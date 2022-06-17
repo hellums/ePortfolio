@@ -16,7 +16,7 @@ else
         <thead>
             <tr>
                 <th>Customer</th>
-                <th>App/System</th>
+                <th>App/System (hover for details)</th>
                 <th>Language</th>
             </tr>
         </thead>
@@ -25,7 +25,7 @@ else
             {
                 <tr>
                     <td>@Project.Customer</td>
-                    <td>@Project.System</td>
+                    <td><span title=@Project.Detail>@Project.System</span></td>
                     <td>@Project.Language</td>
                 </tr>
             }
