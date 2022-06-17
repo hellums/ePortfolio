@@ -2,11 +2,19 @@
 
 <center><h1>Baker's Percentage (MVP)</h1></center>
 <p></p>
-<strong>By selecting the total amount of dough needed (in grams) and the bread type, this program will calculate the amount of ingredients (by weight) needed for a successful and tasty baking experience.</strong>
+This program calculates the amount of ingredients (by weight) needed, based on desired amount of dough and bread type. Includes 11 MS Test methods against the BakersPercentage class. Features to be added include:<p></p>
+
+<ul>
+    <li>Preferment option (Biga, Poolish)</li>
+    <li>Final/DDT (desired dough temperature)</li>
+    <li>Imperial conversion estimates (ounces, teaspoons)</li>
+    <li>Estimation instructions (500g/pan, 350g/artisan, 150g/hoagie, 28g/pizza-inch (diameter), etc.)</li>
+</ul>
+
 <p></p>
 <div class="row">
     <div class="col-md-4">
-        <p role="status">Target weight (grams): @mass</p>
+        <strong><p role="status">Target weight (grams): @mass</p></strong>
         <button class="btn btn-primary" @onclick="DecrementCount">Less</button>
         <button class="btn btn-primary" @onclick="ResetWeight">Reset</button>
         <button class="btn btn-primary" @onclick="IncrementCount">More</button>
@@ -61,3 +69,4 @@
         </table>
     </div>
 </div>
+<p></p>
