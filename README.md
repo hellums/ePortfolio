@@ -2,6 +2,9 @@
 
 This program uses Blazor WebAssembly to create a personal ePortfolio of Razor pages and components representing my body of software development work (professional, academic, and personal). The Single Page App is posted to Azure Websites, and includes a link to a simple Blazor Server CRUD app with basic AD user authentication and a MongoDB on Atlas. This ePortfolio constitutes a wrapper for at least one deliverable project (a Baker's Percentage Engine) that is part of a Code Louisville bootcamp on C#, .NET, and object-oriented programming. It includes work from additional bootcamps on Python and Data Analysis, and the hosted app will remain as a living document, app, and repository with its own SDLC.
 
+## Screen Shot
+<p><img alt="API screenshot" width="600px" src="https://user-images.githubusercontent.com/83464025/174502724-bba411d8-7c4b-4a79-8ce4-897f839a4d86.png"></p>
+
 ## Why Blazor?
 
 I chose Blazor because it has several purported advantages for a project like this:
@@ -44,3 +47,4 @@ You can also use Visual Studio to run from the IDE and automate the browser laun
 - [X] Connect to an [external/3rd party API and read data into your app](https://github.com/hellums/PrintWorthy/blob/ab6b3c120c107285b0d68c1e4cae707df751bbdc/PrintWorthy/Service/ReferenceService.cs#L15): _mongoClient = new MongoClient("mongodb+srv://printworthy")
 - [X] Use a [LINQ query to retrieve information](https://github.com/hellums/PrintWorthy/blob/ab6b3c120c107285b0d68c1e4cae707df751bbdc/PrintWorthy/Service/ReferenceService.cs#L26) from a data structure (such as a list or array) or file: return _referenceTable.Find(x=>x.Id == referenceID).FirstOrDefault();
 - [X] Create [3 or more unit tests](https://github.com/hellums/ePortfolioTests) for your application
+
