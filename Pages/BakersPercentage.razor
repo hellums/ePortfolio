@@ -14,10 +14,10 @@ This program calculates the amount of ingredients (by weight) needed, based on d
 <p></p>
 <div class="row">
     <div class="col-md-4">
-        <strong><p role="status">Target weight (grams): @mass</p></strong>
-        <button class="btn btn-primary" @onclick="DecrementCount">Less</button>
-        <button class="btn btn-primary" @onclick="ResetWeight">Reset</button>
-        <button class="btn btn-primary" @onclick="IncrementCount">More</button>
+        <p role="status"><strong>Target weight (grams): @mass</strong></p>
+        <button-decrement class="btn btn-primary" @onclick="DecrementCount">Less</button-decrement>
+        <button-reset class="btn btn-primary" @onclick="ResetWeight">Reset</button-reset>
+        <button-increment class="btn btn-primary" @onclick="IncrementCount">More</button-increment>
         <p></p>
 
         <select class="form-select-sm" @onchange="CalculateDough">
