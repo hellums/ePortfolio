@@ -2,7 +2,7 @@
 
 namespace ePortfolio.Pages
 {
-    public partial class About
+    public partial class Bootcamp
     {
         private Example[]? examples;
 
