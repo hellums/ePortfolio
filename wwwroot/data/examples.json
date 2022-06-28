@@ -1,26 +1,5 @@
 [
   {
-    "Subject": "ePortfolio",
-    "Language": "C# Blazor Wasm",
-    "Model": "Web SPA",
-    "Scope": "Front/Back",
-    "Database": "JSON"
-  },
-  {
-    "Subject": "ePortfolio Docker",
-    "Language": "C# Blazor Wasm",
-    "Model": "Container, Web SPA",
-    "Scope": "Front/Back",
-    "Database": "JSON"
-  },
-  {
-    "Subject": "PrintWorthy",
-    "Language": "C# Blazor Server",
-    "Model": "Web CRUD",
-    "Scope": "Front/Back",
-    "Database": "MongoDB Atlas"
-  },
-  {
     "Subject": "Baker's Percentage",
     "Language": "C# Blazor Wasm",
     "Model": "Web SPA",
@@ -35,24 +14,38 @@
     "Database": ""
   },
   {
-    "Subject": "RomCom",
+    "Subject": "ePortfolio",
+    "Language": "C# Blazor Wasm",
+    "Model": "Web SPA",
+    "Scope": "Front/Back",
+    "Database": "JSON"
+  },
+  {
+    "Subject": "PrintWorthy (Bookmarks)",
+    "Language": "C# Blazor Server",
+    "Model": "Web CRUD",
+    "Scope": "Front/Back",
+    "Database": "MongoDB Atlas"
+  },
+  {
+    "Subject": "RomCom Web",
     "Language": "Flask/Python",
     "Model": "Web",
     "Scope": "Front/Back",
     "Database": ""
   },
   {
-    "Subject": "RomCom",
+    "Subject": "RomCom EDA",
     "Language": "Jupyter/iPy",
     "Model": "Data Analysis",
     "Scope": "Web/Desktop",
     "Database": ""
   },
   {
-    "Subject": "RomCom",
+    "Subject": "RomCom CLI",
     "Language": "Python",
-    "Model": "CLI",
-    "Scope": "Desktop",
+    "Model": "Desktop",
+    "Scope": "Console",
     "Database": "SQLite"
   }
 ]
