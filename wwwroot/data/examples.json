@@ -7,6 +7,13 @@
     "Database": "JSON"
   },
   {
+    "Subject": "ePortfolio Docker",
+    "Language": "C# Blazor Wasm",
+    "Model": "Container, Web SPA",
+    "Scope": "Front/Back",
+    "Database": "JSON"
+  },
+  {
     "Subject": "PrintWorthy",
     "Language": "C# Blazor Server",
     "Model": "Web CRUD",
