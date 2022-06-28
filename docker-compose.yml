@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  eportfolio:
+    image: ${DOCKER_REGISTRY-}eportfolio
+    build:
+      context: .
+      dockerfile: ./Dockerfile
