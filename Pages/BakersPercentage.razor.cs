@@ -104,7 +104,7 @@ namespace ePortfolio.Pages
         {
             //flour weight is naturally 100% of itself, but need to know sum of percentages to figure out how much flour it equates to
             double TotalPercent = 1.0 + (waterPercent + yeastPercent + saltPercent + sugarPercent + fatPercent) / 100;
-            flourAmount = Math.Ceiling((double)mass / TotalPercent);        //deetermine flour amount, then calculate other ingredients
+            flourAmount = Math.Ceiling((double)mass / TotalPercent);        //determine flour amount, then calculate other ingredients
             waterAmount = Math.Ceiling(flourAmount * (waterPercent / 100)); //essentially the hydration level or ratio to flour
             yeastAmount = Math.Ceiling(flourAmount * (yeastPercent / 100)); //yeast ratio to flour
             saltAmount = Math.Ceiling(flourAmount * (saltPercent / 100));   //salt ratio to flour
