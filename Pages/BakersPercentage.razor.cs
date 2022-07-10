@@ -80,6 +80,20 @@ namespace ePortfolio.Pages
                     sugarPercent = 2.5d;
                     fatPercent = 5.0d;
                     break;
+                case "Rolls":
+                    waterPercent = 60.0d;
+                    yeastPercent = 2.3d;
+                    saltPercent = 1.3d;
+                    sugarPercent = 10.0d;
+                    fatPercent = 10.0d;
+                    break;
+                case "Dumplings":
+                    waterPercent = 71.0d;
+                    yeastPercent = 0.0d;
+                    saltPercent = 1.0d;
+                    sugarPercent = 0.0d;
+                    fatPercent = 9.0d;
+                    break;
                 case "Pizza":
                     waterPercent = 59.0d;
                     yeastPercent = 1.25d;
