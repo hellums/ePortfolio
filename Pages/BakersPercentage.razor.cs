@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Components;
+﻿using AngleSharp.Io;
+using Microsoft.AspNetCore.Components;
 
 namespace ePortfolio.Pages
 {
@@ -42,7 +43,7 @@ namespace ePortfolio.Pages
 
         public void CalculateDough(ChangeEventArgs e)
         {
-            string selectedBread = e.Value.ToString();
+            string? selectedBread = e.Value!.ToString();
             switch (selectedBread)
             {
                 case "Sandwich": //63% hydration
