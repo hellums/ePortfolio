@@ -8,6 +8,13 @@
     <UserSecretsId>6eb541f8-81c1-4ff8-8272-a0736f680a28</UserSecretsId>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="ePortfolioTest\**" />
+    <Content Remove="ePortfolioTest\**" />
+    <EmbeddedResource Remove="ePortfolioTest\**" />
+    <None Remove="ePortfolioTest\**" />
+  </ItemGroup>
+
   <!--<ItemGroup>
     <Compile Remove="Pages\NewFolder\**" />
     <Content Remove="Pages\NewFolder\**" />
@@ -26,12 +33,14 @@
   </ItemGroup>-->
 
   <ItemGroup>
-    <PackageReference Include="bunit" Version="1.9.8" />
-    <PackageReference Include="bunit.core" Version="1.9.8" />
-    <PackageReference Include="bunit.web" Version="1.9.8" />
+    <PackageReference Include="bunit" Version="1.9.7-preview" />
+    <PackageReference Include="bunit.core" Version="1.9.7-preview" />
+    <PackageReference Include="bunit.web" Version="1.9.7-preview" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.6" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.6" PrivateAssets="all" />
+    <PackageReference Include="MSTest.TestAdapter" Version="2.2.10" />
     <PackageReference Include="MSTest.TestFramework" Version="2.2.10" />
+    <PackageReference Include="xunit.extensibility.core" Version="2.4.1" />
   </ItemGroup>
 
   <ItemGroup>
