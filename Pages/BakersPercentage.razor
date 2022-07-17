@@ -50,23 +50,38 @@ This program calculates the amount of ingredients needed (by weight), based on d
                 <tr>
                     <td>Water</td>
                     <td>@waterAmount</td>
+                </tr>                
+                
+                @if (yeastAmount > 0) 
+                {
+                    <tr>
+                        <td>Yeast</td>
+                        <td>@yeastAmount</td>
+                    </tr>
+                } 
+                
+                @if (saltAmount > 0)
+                {
+                    <tr>
+                        <td>Salt</td>
+                        <td>@saltAmount</td>
                 </tr>
-                <tr>
-                    <td>Yeast</td>
-                    <td>@yeastAmount</td>
-                </tr>
-                <tr>
-                    <td>Salt</td>
-                    <td>@saltAmount</td>
-                </tr>
-                <tr>
-                    <td>Sugar</td>
-                    <td>@sugarAmount</td>
-                </tr>
-                <tr>
-                    <td>Oil/Butter</td>
-                    <td>@fatAmount</td>
-                </tr>
+                }
+                
+                @if (sugarAmount > 0)
+                {
+                    <tr>
+                        <td>Sugar</td>
+                        <td>@sugarAmount</td>
+                    </tr>
+                }
+                @if (fatAmount > 0)
+                {
+                    <tr>
+                        <td>Oil/Butter</td>
+                        <td>@fatAmount</td>
+                    </tr>
+                }  
             </tbody>
         </table>
     </div>
