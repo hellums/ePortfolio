@@ -50,6 +50,33 @@ You can also use Visual Studio to run from the IDE and automate the browser laun
 - [X] Connect to an external/3rd party API and [read data into your app](https://github.com/hellums/ePortfolio/blob/c650eafc47f49c14031c88f6fb5f7ee919c1da99/Pages/PrintWorthy.razor#L6) (separate repo)
 - [X] Build a [conversion tool that converts user input to another type and displays it](https://github.com/hellums/ePortfolio/blob/c650eafc47f49c14031c88f6fb5f7ee919c1da99/Pages/BakersPercentage.razor#L164) (ex: converts cups to grams)
 - [X] Connect to an [external/3rd party API and read data into your app](https://github.com/hellums/PrintWorthy/blob/ab6b3c120c107285b0d68c1e4cae707df751bbdc/PrintWorthy/Service/ReferenceService.cs#L15): _mongoClient = new MongoClient("mongodb+srv://printworthy")
-- [X] Use a [LINQ query to retrieve information](https://github.com/hellums/PrintWorthy/blob/ab6b3c120c107285b0d68c1e4cae707df751bbdc/PrintWorthy/Service/ReferenceService.cs#L26) from a data structure (such as a list or array) or file: return _referenceTable.Find(x=>x.Id == referenceID).FirstOrDefault();
 - [X] Create [3 or more unit tests](https://github.com/hellums/ePortfolio/tree/root/ePortfolioTest) for your application
+- [X] Use a LINQ query to retrieve information from a data structure (such as a list or array) or file (methods below from Printworthy, private repo):
+        public string Delete(string referenceID)
+        {
+          _referenceTable.DeleteOne(x=>x.Id==referenceID);
+            return "Deleted";
+        }
 
+        public Reference GetReference(string referenceID)
+        {
+            return _referenceTable.Find(x=>x.Id == referenceID).FirstOrDefault();
+        }
+
+        public List<Reference> GetReferences()
+        {
+            return _referenceTable.Find(FilterDefinition<Reference>.Empty).ToList();
+        }
+
+        public void SaveOrUpdate(Reference reference)
+        {
+            var referenceObj = _referenceTable.Find(x=>x.Id == reference.Id).FirstOrDefault();
+            if (referenceObj == null)
+            {
+                _referenceTable.InsertOne(reference);
+            }
+            else
+            {
+                _referenceTable.ReplaceOne(x => x.Id == reference.Id, reference);
+            }
+        }
