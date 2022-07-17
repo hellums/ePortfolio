@@ -40,7 +40,7 @@ You can also use Visual Studio to run from the IDE and automate the browser laun
 - [X] Project includes a README file that explains the following:
 - [X] A one paragraph or longer description of what your project is about
 - [X] Any special instructions required for the reviewer to run your project
-- [X] Implement a “master loop” console application, including choosing to exit the program (in separate repo)
+- [X] Implement a â€œmaster loopâ€ console application, including choosing to exit the program (in separate repo)
 - [X] Create at least [one class](https://github.com/hellums/ePortfolio/blob/c650eafc47f49c14031c88f6fb5f7ee919c1da99/Pages/Projects.razor.cs#L12) and [object instance](https://github.com/hellums/ePortfolio/blob/c650eafc47f49c14031c88f6fb5f7ee919c1da99/Pages/Projects.razor.cs#L10) with [populated data used in the application](https://github.com/hellums/ePortfolio/blob/c650eafc47f49c14031c88f6fb5f7ee919c1da99/Pages/Projects.razor#L24)
 - [X] Create an additional class which inherits one or more properties from its parent
 - [X] Create and call at least 3 functions or methods: [1.](https://github.com/hellums/ePortfolio/blob/c650eafc47f49c14031c88f6fb5f7ee919c1da99/Pages/Csharp.razor#L6) [2.](https://github.com/hellums/ePortfolio/blob/c650eafc47f49c14031c88f6fb5f7ee919c1da99/Pages/Csharp.razor#L1) [3. ](https://github.com/hellums/ePortfolio/blob/c650eafc47f49c14031c88f6fb5f7ee919c1da99/Pages/BakersPercentage.razor#L86) [4. ](https://github.com/hellums/ePortfolio/blob/c650eafc47f49c14031c88f6fb5f7ee919c1da99/Pages/BakersPercentage.razor#L103), at least one of which [returns a value used in the application](https://github.com/hellums/ePortfolio/blob/c650eafc47f49c14031c88f6fb5f7ee919c1da99/Pages/BakersPercentage.razor#L163)
@@ -51,5 +51,5 @@ You can also use Visual Studio to run from the IDE and automate the browser laun
 - [X] Build a [conversion tool that converts user input to another type and displays it](https://github.com/hellums/ePortfolio/blob/c650eafc47f49c14031c88f6fb5f7ee919c1da99/Pages/BakersPercentage.razor#L164) (ex: converts cups to grams)
 - [X] Connect to an [external/3rd party API and read data into your app](https://github.com/hellums/PrintWorthy/blob/ab6b3c120c107285b0d68c1e4cae707df751bbdc/PrintWorthy/Service/ReferenceService.cs#L15): _mongoClient = new MongoClient("mongodb+srv://printworthy")
 - [X] Use a [LINQ query to retrieve information](https://github.com/hellums/PrintWorthy/blob/ab6b3c120c107285b0d68c1e4cae707df751bbdc/PrintWorthy/Service/ReferenceService.cs#L26) from a data structure (such as a list or array) or file: return _referenceTable.Find(x=>x.Id == referenceID).FirstOrDefault();
-- [X] Create [3 or more unit tests](https://github.com/hellums/ePortfolioTests) for your application
+- [X] Create [3 or more unit tests](https://github.com/hellums/ePortfolio/tree/root/ePortfolioTest) for your application
 
