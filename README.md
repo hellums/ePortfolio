@@ -1,6 +1,6 @@
 # ePortfolio
 
-This program uses Blazor WebAssembly to create a personal ePortfolio of Razor pages and components representing my body of software development work (professional, academic, and personal). The Single Page App is posted to Azure Websites and containerized on Docker Hub, and includes a link to a simple Blazor Server CRUD app with basic AD user authentication and a MongoDB on Atlas. This ePortfolio constitutes a wrapper for at least one deliverable project (a Baker's Percentage Engine) that is part of a Code Louisville bootcamp on C#, .NET, and object-oriented programming. It includes work from additional bootcamps on Python and Data Analysis, and the hosted app will remain as a living document, app, and repository with its own SDLC.
+This program uses Blazor WebAssembly to create a personal ePortfolio of Razor pages and components representing my body of software development work (professional, academic, and personal). The Single Page App is posted to Azure Websites and containerized on Docker Hub, and includes a link to a simple Blazor Server CRUD app with basic AD user authentication and a MongoDB on Atlas. This ePortfolio constitutes a wrapper for at least one custom/unique deliverable capstone project (a Baker's Percentage Engine in multiple formats: SPA web service, console program, and API service), as part of a Code Louisville course on C#, .NET, and object-oriented programming. It includes work from additional bootcamps on Python and Data Analysis, and the hosted app will remain as a living document, app, and repository with its own SDLC.
 
 ## Screen Shot
 <p><img alt="API screenshot" width="600px" src="https://user-images.githubusercontent.com/83464025/174502724-bba411d8-7c4b-4a79-8ce4-897f839a4d86.png"></p>
@@ -23,18 +23,19 @@ I chose Blazor because it has several purported advantages for a project like th
 To see the program running live, go to my [ePortfolio site on Azure](https://hellums-eportfolio.azurewebsites.net), or use Docker to pull and run the [ePortfolio image on Docker Hub](https://hub.docker.com/r/hellums/eportfolio)
 
 
-To clone and run the program on your local system, do the following:
+To clone and run the tests and program on your local system, do the following:
 
 - create a new folder, such as "test", then run these commands
 - > cd test
 - > git clone https://github.com/hellums/ePortfolio.git
 - > cd ePortfolio
-- > dotnet run
+- > dotnet test ePortfolioTest
+- > dotnet run -s ePortfolio.sln --project ePortfolio.csproj
 
-- In a browser or tab, go the the link listed in the dotnet output (http://localhost:7257 for example) 
+- In a browser or tab, enter the URL link listed in the dotnet output (http://localhost:7257 for example) 
+- To cleanup when done, return to the command line and press CTRL-C keys to stop the program, then cd back to where you created the test folder and remove it (and ePortfolio) using del test (on Windows) or rm -rf test (on Mac or Linux)
 
-
-You can also use Visual Studio to run from the IDE and automate the browser launch, by loading the ePortfolio.sln file in that folder (after cloning)
+You can also use Visual Studio to run associated tests from the IDE and automate the browser launch, by loading the ePortfolio.sln file in that folder (after cloning), and remove the folders afterwards from File Explorer (on Windows) or Finder (on Mac)
  
 ## Code Louisville Requirements List
 - [X] Project includes a README file that explains the following:
