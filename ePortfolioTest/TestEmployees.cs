@@ -9,9 +9,11 @@ namespace ePortfolioTests
         public void EmployeeFullNameCorrect()
         {
             //-- Arrange
-            var worker = new Worker();
-            worker.FirstName = "Duane";
-            worker.LastName = "Hellums";
+            var worker = new Worker
+            {
+                FirstName = "Duane",
+                LastName = "Hellums"
+            };
             string expected = "Duane Hellums";
 
             //-- Act
@@ -53,10 +55,12 @@ namespace ePortfolioTests
         public void CalculateRaiseIsCorrect()
         {
             //-- Arrange
-            var worker = new Worker();
-            worker.Salary = 130000;
-            worker.BonusPercentage = 3;
-            string expected = "3900"; //refactor as double, no longer a console app
+            var worker = new Worker
+            {
+                Salary = 130000,
+                BonusPercentage = 3
+            };
+            string expected = "3900";
 
             //-- Act?
             string actual = worker.CalculateRaise();
