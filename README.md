@@ -33,7 +33,7 @@ To clone and run the tests and program on your local system, do the following:
 - > dotnet run -s ePortfolio.sln --project ePortfolio.csproj
 
 - In a browser or tab, enter the URL link listed in the dotnet output (http://localhost:7257 for example) 
-- To cleanup when done, return to the command line and press CTRL-C keys to stop the program, then cd back to where you created the test folder and remove it (and ePortfolio) using del test (on Windows) or rm -rf test (on Mac or Linux)
+- To cleanup when done, return to the command line and press CTRL-C keys to stop the program, then cd back to where you created the test folder and remove it (and ePortfolio) using rmdir /s /q test (on Windows) or rm -rf test (on Mac or Linux)
 
 You can also use Visual Studio to run associated tests from the IDE and automate the browser launch, by loading the ePortfolio.sln file in that folder (after cloning), and remove the folders afterwards from File Explorer (on Windows) or Finder (on Mac)
  
