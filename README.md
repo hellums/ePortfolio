@@ -20,24 +20,33 @@ I chose Blazor because it has several purported advantages for a project like th
 - A Blazor ePortfolio is a more user-friendly interface, as an SPA, (with less "noise") than Github (especially for an ePortfolio)
 
 ## Instructions
-To see the program running live, go to my [ePortfolio site on Azure](https://hellums-eportfolio.azurewebsites.net), or use Docker to pull and run the [ePortfolio image on Docker Hub](https://hub.docker.com/r/hellums/eportfolio)
+To see the ePortfolio Web application running live, go to my [ePortfolio site on Azure](https://hellums-eportfolio.azurewebsites.net), or use Docker to pull and run the [ePortfolio image on Docker Hub](https://hub.docker.com/r/hellums/eportfolio).
+To see the Bakers Percentage API running live, go to my [BakersPercentage site on Azure](https://hellums-bakersapi.azurewebsites.net/api).
 
-
-To clone and run the tests and program on your local system, do the following:
+To clone, test, and run the console, web, and API programs on your local drive, do the following:
 
 - create a new folder, such as "test", then run these commands
 - > cd test
 - > git clone https://github.com/hellums/ePortfolio.git
 - > cd ePortfolio
-- > dotnet test ePortfolioTest
+- > dotnet test ePortfolio.sln
+- > dotnet run -s ePortfolio.sln --project bakers/Bakers.csproj
+
 - > dotnet run -s ePortfolio.sln --project ePortfolio.csproj
 
 - In a browser or tab, enter the URL link listed in the dotnet output (http://localhost:7257 for example) 
-- To cleanup when done, return to the command line and press CTRL-C keys to stop the program, then cd back to where you created the test folder and remove it (and ePortfolio) using rmdir /s /q test (on Windows) or rm -rf test (on Mac or Linux)
+- To exit, return to the command line and press Ctrl-C
 
-You can also use Visual Studio to run associated tests from the IDE and automate the browser launch, by loading the ePortfolio.sln file in that folder (after cloning), and remove the folders afterwards from File Explorer (on Windows) or Finder (on Mac)
+- > dotnet run -s ePortfolio.sln --project BakersAPI/BakersAPI.csproj
+
+- In a browser or tab, enter the URL link listed in the dotnet output (http://localhost:7195/api for example) 
+- To exit, return to the command line and press Ctrl-C
+
+- To cleanup when done, cd back to where you created the test folder and remove it (and ePortfolio) using rmdir /s /q test (on Windows) or rm -rf test (on Mac or Linux)
+
+You can also use Visual Studio to run the programs and associated tests from the IDE and automate the browser launch, by loading the ePortfolio.sln file in that folder (after cloning), and remove the folders afterwards from File Explorer (on Windows) or Finder (on Mac)
  
-## Code Louisville Requirements List
+## Code Louisville Requirements List (for ePortfolio project)
 - [X] Project includes a README file that explains the following:
 - [X] A one paragraph or longer description of what your project is about
 - [X] Any special instructions required for the reviewer to run your project
@@ -81,3 +90,17 @@ You can also use Visual Studio to run associated tests from the IDE and automate
                 _referenceTable.ReplaceOne(x => x.Id == reference.Id, reference);
             }
         }
+
+## Code Louisville Requirements List (for console project)
+- [X] Project includes a [README file](https://github.com/hellums/bakers/blob/root/README.md) that explains the following:
+  - [X] A one paragraph or longer description of what your project is about
+  - [X] Any special instructions required for the reviewer to run your project
+- [X] Implement a [“master loop”](https://github.com/hellums/bakers/blob/0a81141147874d55a5204060c133c755710801c0/bakers/Controllers/PercentageController.cs#L11) console application, including choosing to exit the program
+- [X] Create at least [one class and object instance](https://github.com/hellums/bakers/blob/0a81141147874d55a5204060c133c755710801c0/bakers/Models/PercentageModel.cs#L1) with populated data used in the application
+- [X] Create an additional [class which inherits one or more properties](https://github.com/hellums/bakers/blob/0a81141147874d55a5204060c133c755710801c0/bakers/Models/PercentageModel.Ciabatta.cs#L3) from its parent
+- [X] Create and call at least [3 functions or methods](https://github.com/hellums/bakers/blob/0a81141147874d55a5204060c133c755710801c0/bakers/Views/PercentageView.cs#L47), at least one of which [returns a value used](https://github.com/hellums/bakers/blob/0a81141147874d55a5204060c133c755710801c0/bakers/Views/PercentageView.cs#L45) in the application
+- [X] Create a [dictionary or list](https://github.com/hellums/bakers/blob/0a81141147874d55a5204060c133c755710801c0/bakers/Views/PercentageView.cs#L10), populate it with several values, [retrieve at least one value](https://github.com/hellums/bakers/blob/0a81141147874d55a5204060c133c755710801c0/bakers/Controllers/PercentageController.cs#L13), and use it in your program
+- [X] Implement a [log that records errors](https://github.com/hellums/bakers/blob/0a81141147874d55a5204060c133c755710801c0/bakers/Models/Logger/Logger.cs#L16), invalid inputs, or other important events and writes them to a text file
+- [X] Build a [conversion tool](https://github.com/hellums/bakers/blob/0a81141147874d55a5204060c133c755710801c0/bakers/Models/PercentageModel.cs#L20) that converts user input to another type and displays the results
+- [X] Create [3 or more unit tests](https://github.com/hellums/bakers/blob/0a81141147874d55a5204060c133c755710801c0/BakersTest/PercentageModelTest.cs#L4)
+- [X] Uses [interfaces and MVC architecture](https://github.com/hellums/bakers/blob/5aad293bc22abdc7f0d699225554acb3071999c0/bakers/Controllers/PercentageController.cs#L3) to separate UI from business logic and data layer
