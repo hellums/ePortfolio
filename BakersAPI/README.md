@@ -10,12 +10,12 @@ Instructions: Replace /api in the URL with /type/ciabatta/weight/1000 (other typ
 
 For example, to see ingredients needed for 575 grams of white sandwich loaf (one pan):
 
-[https://hellums-bakersapi.azurewebsites.net/type/sandwich/weight/575](https://hellums-bakersapi.azurewebsites.net/type/sandwich/weight/575)
+[https://hellums-bakersapi.azurewebsites.net/sandwich/575](https://hellums-bakersapi.azurewebsites.net/sandwich/575)
 
 To see ingredients needed for 680 grams of pizza dough (2 x 12" crusts, 1 oz or 28.35 grams per inch of total diameter):
 
-[https://hellums-bakersapi.azurewebsites.net/type/pizza/weight/680](https://hellums-bakersapi.azurewebsites.net/type/pizza/weight/680)
+[https://hellums-bakersapi.azurewebsites.net/pizza/680](https://hellums-bakersapi.azurewebsites.net/pizza/680)
 
 To see ingredients needed for 900 grams of ciabatta (2 typical loaves):
 
-[https://hellums-bakersapi.azurewebsites.net/type/ciabatta/weight/900](https://hellums-bakersapi.azurewebsites.net/type/ciabatta/weight/900)
+[https://hellums-bakersapi.azurewebsites.net/ciabatta/900](https://hellums-bakersapi.azurewebsites.net/ciabatta/900)
