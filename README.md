@@ -30,6 +30,7 @@ To clone, test, and run the console, web, and API programs on your local drive, 
 - > git clone https://github.com/hellums/ePortfolio.git
 - > cd ePortfolio
 - > dotnet test ePortfolio.sln
+
 - > dotnet run -s ePortfolio.sln --project bakers/Bakers.csproj
 
 - > dotnet run -s ePortfolio.sln --project ePortfolio.csproj
