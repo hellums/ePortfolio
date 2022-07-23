@@ -40,7 +40,7 @@ To clone, test, and run the console, web, and API programs on your local drive, 
 
 - > dotnet run -s ePortfolio.sln --project BakersAPI/BakersAPI.csproj
 
-- In a browser or tab, enter the URL link listed in the dotnet output, plus /api (https://localhost:7195/api) to see the instructions, or anything using the template provided: (https://localhost/api/ciabatta/900 for example).
+- In a browser or tab, enter the URL link listed in the dotnet output, plus /api (https://localhost:7195/api) to see the instructions, or anything using the template provided: (https://localhost:7195/api/ciabatta/900 for example).
 - To exit, return to the command line and press Ctrl-C
 
 - To cleanup when done, cd back to where you created the test folder and remove it (and ePortfolio) using rmdir /s /q test (on Windows) or rm -rf test (on Mac or Linux)
