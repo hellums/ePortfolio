@@ -1,25 +1,32 @@
 # ePortfolio
 
-This program uses Blazor WebAssembly to create a personal ePortfolio of Razor pages and components representing my body of software development work (professional, academic, and personal). The Single Page App is posted to Azure Websites and containerized on Docker Hub, and includes a link to a simple Blazor Server CRUD app with basic AD user authentication and a MongoDB on Atlas. This ePortfolio constitutes a wrapper for at least one custom/unique deliverable capstone project (a Baker's Percentage Engine in multiple formats: SPA web service, console program, and API service), as part of a Code Louisville course on C#, .NET, and object-oriented programming. It includes work from additional bootcamps on Python and Data Analysis, and the hosted app will remain as a living document, app, and repository with its own SDLC.
+This .NET Core C# solution includes 5 projects: 
+- a Baker's Percentage console program,
+- associated tests for the console program,
+- a Baker's Percentage web API,
+- a portfolio (ePortfolio) web app, and
+- associated tests for the portfolio
 
-## Screen Shot
+The ePortfolio is a Blazor WebAssembly Single-Page App with an Azure CI pipeline using GitHub Actions. It highlights my software development experience (professional, academic, and personal). It also includes a link to a Blazor Server app that enables CRUD on a database of "PrintWorthy" swdev-related web links, backed by Azure AD user authentication and MongoDB on Atlas. The hosted ePortfolio and PrintWorthy web apps are in SDLC maintenance phase.
+
+## Screen Shot (https://hellums-eportfolio.azurewebsites.com)
 <p><img alt="API screenshot" width="600px" src="https://user-images.githubusercontent.com/83464025/174502724-bba411d8-7c4b-4a79-8ce4-897f839a4d86.png"></p>
 
 ## Why Blazor?
 
-I chose Blazor because it has several purported advantages for a project like this:
-- Blazor leverages the newest WebAssembly (Wasm) standard, as well as fundamental HTML, CSS, Bootstrap, Open Iconic, and Javascript
-- Blazor provides a Full Stack open web development framework for C# (vs Javascript's Angular, Vue, and React, or Python's Django/Flask)
-- Blazor is new and fresh and shiny, from a technology and software development perspective
-- A Blazor ePortfolio and the underlying C# project satisfy the course requirements of the bootcamp
-- A Blazor ePortfolio serves a valid business need for me personally
-- A Blazor ePortfolio can be delivered from anywhere, including CDNs, without the need for a complicated backend stack
-- A Blazor ePortfolio is easily deployed from Visual Studio to an Azure hosted app where anyone can download it on any device
-- A Blazor ePortfolio can be integrated with a CI/CD pipeline to Azure
-- A Blazor ePortfolio can easily be decoupled from Github or a .NET server
-- A Blazor ePortfolio is a more user-friendly interface, as an SPA, (with less "noise") than Github (especially for an ePortfolio)
+I chose Blazor for an ePortfolio because it has several purported advantages for a project like this:
+- Blazor is Microsoft's newest Web framework technology, stable and powerful
+- Blazor represents a more effective GUI for portfolio demonstration than GitHub repos 
+- Blazor keeps native to C#, and does not rely on Javascript web frameworks for front-end rendering
+- Blazor leverages the newest WebAssembly (Wasm) standard, as well as fundamental HTML, CSS, and Bootstrap
+- Blazor Wasm SPA can be delivered from anywhere, including CDNs, without the need for a complicated backend stack
+- Blazor is easily deployed from Visual Studio as an Azure hosted app where anyone can download it on any device
+- Blazor can be integrated with a CI/CD pipeline to Azure using GitHub Actions
 
 ## Instructions
+
+RECOMMENDATION: Shift-click or Ctrl-click on links to bring them up in new windows or tab
+
 To see the ePortfolio Web application running live, go to my [ePortfolio site on Azure](https://hellums-eportfolio.azurewebsites.net), or use Docker to pull and run the [ePortfolio image on Docker Hub](https://hub.docker.com/r/hellums/eportfolio).
 To see the Bakers Percentage API running live, go to my [BakersPercentage site on Azure](https://hellums-bakersapi.azurewebsites.net/api).
 
@@ -33,21 +40,23 @@ To clone, test, and run the console, web, and API programs on your local drive, 
 
 - > dotnet run -s ePortfolio.sln --project bakers/Bakers.csproj
 
-- > dotnet run -s ePortfolio.sln --project ePortfolio.csproj
-
-- In a browser or tab, enter the URL link listed in the dotnet output (https://localhost:7257) 
-- To exit, return to the command line and press Ctrl-C once or twice
-
 - > dotnet run -s ePortfolio.sln --project BakersAPI/BakersAPI.csproj
 
-- In a browser or tab, enter the URL link listed in the dotnet output, plus /api (https://localhost:7195/api) to see the instructions, or anything using the template provided: (https://localhost:7195/api/ciabatta/900 for example).
-- To exit, return to the command line and press Ctrl-C once or twice
+- In a browser or tab, enter the URL link listed in the dotnet output, plus /api (or click https://localhost:7195/api) to see the instructions, or anything using the template provided: (https://localhost:7195/api/ciabatta/900 for example).
+- To stop the API program, return to the command line and press Ctrl-C once or twice
+
+- > dotnet run -s ePortfolio.sln --project ePortfolio.csproj
+
+- In a browser or tab, enter the URL link listed in the dotnet output (or click https://localhost:7257) 
+- To stop the ePortfolio program, return to the command line and press Ctrl-C once or twice
 
 - To cleanup when done, cd back to where you created the test folder and remove it (and ePortfolio) using rmdir /s /q test (on Windows) or rm -rf test (on Mac or Linux)
 
 You can also use Visual Studio to run the programs and associated tests from the IDE and automate the browser launch, by loading the ePortfolio.sln file in that folder (after cloning), and remove the folders afterwards from File Explorer (on Windows) or Finder (on Mac)
  
 ## Code Louisville Requirements List (for ePortfolio project)
+RECOMMENDATION: Shift-click or Ctrl-click on links to bring them up in new windows or tab
+
 - [X] Project includes a README file that explains the following:
 - [X] A one paragraph or longer description of what your project is about
 - [X] Any special instructions required for the reviewer to run your project
@@ -93,6 +102,8 @@ You can also use Visual Studio to run the programs and associated tests from the
         }
 
 ## Code Louisville Requirements List (for console project)
+RECOMMENDATION: Shift-click or Ctrl-click on links to bring them up in new windows or tab
+
 - [X] Project includes a [README file](https://github.com/hellums/bakers/blob/root/README.md) that explains the following:
   - [X] A one paragraph or longer description of what your project is about
   - [X] Any special instructions required for the reviewer to run your project
