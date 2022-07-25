@@ -2,10 +2,10 @@
 
 This .NET Core C# solution includes 5 projects: 
 - a Baker's Percentage console program,
-- associated tests for the console program,
+- associated unit tests for the console program,
 - a Baker's Percentage web API,
 - a portfolio (ePortfolio) web app, and
-- associated tests for the portfolio
+- associated unit tests for the portfolio
 
 The ePortfolio is a Blazor WebAssembly Single-Page App with an Azure CI pipeline using GitHub Actions. It highlights my software development experience (professional, academic, and personal). It also includes a link to a Blazor Server app that enables CRUD on a database of "PrintWorthy" swdev-related web links, backed by Azure AD user authentication and MongoDB on Atlas. The hosted ePortfolio and PrintWorthy web apps are in SDLC maintenance phase.
 
