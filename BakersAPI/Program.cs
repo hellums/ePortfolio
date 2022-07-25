@@ -1,7 +1,3 @@
-using Microsoft.AspNetCore.Builder;
-using System.Diagnostics.Metrics;
-using System.Security.Cryptography;
-
 var builder = WebApplication.CreateBuilder(args);
 
 var app = builder.Build();

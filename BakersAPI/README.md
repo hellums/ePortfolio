@@ -6,9 +6,9 @@ Parameters for bread type and weight are passed to the API in the following form
 
 https://hellums-bakersapi.azurewebsites.net/api 
 
-Instructions: Replace /api in the URL with /ciabatta/1000 (other types: sandwich, focaccia, french, pizza, buns, rolls, or dumplings; weight is in grams)
+Instructions:  After /api in URL add bread type and weight in grams, for example: /api/ciabatta/900 (other types: sandwich, focaccia, french, pizza, buns, rolls, or dumplings; weight is in grams)
 
-For example, to see ingredients needed for 575 grams of white sandwich loaf (one pan):
+To see ingredients needed for 575 grams of white sandwich loaf (one pan):
 
 [https://hellums-bakersapi.azurewebsites.net/api/sandwich/575](https://hellums-bakersapi.azurewebsites.net/api/sandwich/575)
 
