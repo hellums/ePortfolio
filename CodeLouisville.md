@@ -5,14 +5,6 @@ To clone, test, and run the console, web, and API programs on your local drive, 
 - > git clone https://github.com/hellums/ePortfolio.git
 - > cd ePortfolio
 - > dotnet test ePortfolio.sln
-
-- > dotnet run -s ePortfolio.sln --project bakers/Bakers.csproj
-
-- > dotnet run -s ePortfolio.sln --project BakersAPI/BakersAPI.csproj
-
-- In a browser or tab, enter the URL link listed in the dotnet output, plus /api (or click https://localhost:7195/api) to see the instructions, or anything using the template provided: (https://localhost:7195/api/ciabatta/900 for example).
-- To stop the API program, return to the command line and press Ctrl-C once or twice
-
 - > dotnet run -s ePortfolio.sln --project ePortfolio.csproj
 
 - In a browser or tab, enter the URL link listed in the dotnet output (or click https://localhost:7257) 
