@@ -9,21 +9,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="BakersAPI\**" />
-    <Compile Remove="BakersTest\**" />
-    <Compile Remove="bakers\**" />
     <Compile Remove="ePortfolioTest\**" />
-    <Content Remove="BakersAPI\**" />
-    <Content Remove="BakersTest\**" />
-    <Content Remove="bakers\**" />
     <Content Remove="ePortfolioTest\**" />
-    <EmbeddedResource Remove="BakersAPI\**" />
-    <EmbeddedResource Remove="BakersTest\**" />
-    <EmbeddedResource Remove="bakers\**" />
     <EmbeddedResource Remove="ePortfolioTest\**" />
-    <None Remove="BakersAPI\**" />
-    <None Remove="BakersTest\**" />
-    <None Remove="bakers\**" />
     <None Remove="ePortfolioTest\**" />
   </ItemGroup>
 
